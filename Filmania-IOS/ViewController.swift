@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseAnalytics
+
+
 
 class ViewController: UIViewController {
 
@@ -14,7 +17,5 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.backgroundColor = .systemBlue
     }
-
-
 }
 

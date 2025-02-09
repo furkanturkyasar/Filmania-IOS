@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ED3FC5212D59297F00966E38 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ED3FC5202D59297F00966E38 /* FirebaseAnalytics */; };
+		ED3FC5232D59297F00966E38 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ED3FC5222D59297F00966E38 /* FirebaseAuth */; };
+		ED3FC5252D59297F00966E38 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ED3FC5242D59297F00966E38 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		ED3FC4FB2D5918E700966E38 /* Filmania-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Filmania-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3FC5212D59297F00966E38 /* FirebaseAnalytics in Frameworks */,
+				ED3FC5232D59297F00966E38 /* FirebaseAuth in Frameworks */,
+				ED3FC5252D59297F00966E38 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = "Filmania-IOS";
 			packageProductDependencies = (
+				ED3FC5202D59297F00966E38 /* FirebaseAnalytics */,
+				ED3FC5222D59297F00966E38 /* FirebaseAuth */,
+				ED3FC5242D59297F00966E38 /* FirebaseFirestore */,
 			);
 			productName = "Filmania-IOS";
 			productReference = ED3FC4FB2D5918E700966E38 /* Filmania-IOS.app */;
@@ -107,6 +119,9 @@
 			);
 			mainGroup = ED3FC4F22D5918E700966E38;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ED3FC51F2D59297F00966E38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = ED3FC4FC2D5918E700966E38 /* Products */;
 			projectDirPath = "";
@@ -345,6 +360,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED3FC51F2D59297F00966E38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED3FC5202D59297F00966E38 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED3FC51F2D59297F00966E38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		ED3FC5222D59297F00966E38 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED3FC51F2D59297F00966E38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ED3FC5242D59297F00966E38 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED3FC51F2D59297F00966E38 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED3FC4F32D5918E700966E38 /* Project object */;
 }
